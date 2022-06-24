@@ -1,0 +1,11 @@
+h1 Formulario POST de nuevo producto
+form(action="/productos", method='POST') 
+    p Title: 
+    input(type="text", name='title')
+    p Price: 
+    input(type="text", name='price')
+    p Thumbnail: 
+    input(type="text", name='thumbnail')
+    br
+    input(type='submit', value='Submit')
+a(href="/productos") Ir a stock

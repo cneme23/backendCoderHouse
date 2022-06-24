@@ -1,0 +1,19 @@
+<h1>Stock actual</h1>
+{{#if productos.length}}
+    <table>
+        <tr>
+            <th>Title</th><th>Price</th><th>Image</th><th>id</th>
+        </tr>
+            {{#each productos}}
+                <tr>
+                    <td>{{ this.title }} </td>
+                    <td>{{ this.price }} </td>
+                    <td><img src="{{ this.thumbnail }}" alt=""> </td>
+                    <td>{{ this.id }} </td>
+                </tr>
+            {{/each}}
+    </table>
+{{/if}} {{#else}}
+            <p>No hay Productos para mostrar</p>
+        {{/else}}
+<a href="/">Ir a carga</a>
